@@ -19,11 +19,11 @@ function start() {
                 showCancelButton: false,
                 showConfirmButton: false,
                 html: `
-                  <button class="questionsButtons" onclick="redirectToPage('questions_html/question1.html')">1</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_html/question2.html')">2</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_html/question3.html')">3</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_html/question4.html')">4</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_html/question5.html')">5</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_html/question1.html')">1</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_html/question2.html')">2</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_html/question3.html')">3</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_html/question4.html')">4</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_html/question5.html')">5</button>
                 `,
             });
         } else if (result.isDenied) {
@@ -32,11 +32,11 @@ function start() {
                 showCancelButton: false,
                 showConfirmButton: false,
                 html: `
-                  <button class="questionsButtons" onclick="redirectToPage('questions_css/question1.html')">1</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_css/question1.html')">2</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_css/question1.html')">3</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_css/question1.html')">4</button>
-                  <button class="questionsButtons" onclick="redirectToPage('questions_css/question1.html')">5</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">1</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">2</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">3</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">4</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">5</button>
                 `,
             });
         }
