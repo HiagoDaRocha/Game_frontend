@@ -39,6 +39,7 @@ main {
   color: white;
   box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
   padding: 1em; /* Adiciona padding para melhor layout */
+  margin-bottom: 100px;
 }
 
 textarea {
