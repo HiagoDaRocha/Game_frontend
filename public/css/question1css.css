@@ -27,8 +27,7 @@ img {
 }
 
 main {
-  width: 45%;
-  height: 70vh;
+  width: 55%;
   margin: 0 auto;
   border: 1px solid black;
   display: flex;
