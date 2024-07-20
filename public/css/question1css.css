@@ -9,16 +9,6 @@ body {
   background-color: #3d405b;
 }
 
-img {
-  mix-blend-mode: multiply; /*Retira o fundo da imagem*/
-}
-
-#challenge {
-  border: solid black;
-  width: 80px;
-  height: 80px;
-}
-
 #center {
   text-align: center;
   display: flex;
@@ -43,7 +33,7 @@ main {
 }
 
 textarea {
-  width: 100%;
+  width: -webkit-fill-available;
   height: 10vh;
   resize: none; /* Remove a opção de redimensionar o textarea */
   padding: 1em; /* Padding responsivo */
@@ -79,4 +69,29 @@ button:hover {
   color: rgb(219, 216, 216); /* Cor do texto ao passar o mouse */
   font-size: 1rem; /* Tamanho da fonte ao passar o mouse */
   text-shadow: 1px 10px 5px rgb(61, 61, 61); /* Sombra do texto ao passar o mouse */
+}
+
+#challenge {
+  border: solid black;
+  width: 80px;
+  height: 80px;
+}
+
+#challenge2{
+  display: flex;
+ text-align: left;
+ flex-direction: column;
+
+}
+
+#challenge5{
+
+  width: 50%;
+  height: 15vh;
+}
+
+#challenge5-imgchallenge{
+
+  width: 50%;
+  height: 15vh;
 }
