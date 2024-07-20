@@ -33,10 +33,10 @@ function start() {
                 showConfirmButton: false,
                 html: `
                   <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">1</button>
-                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">2</button>
-                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">3</button>
-                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">4</button>
-                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question1.html')">5</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question2.html')">2</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question3.html')">3</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question4.html')">4</button>
+                  <button class="questionsButtons" onclick="redirectToPage('./public/questions_css/question5.html')">5</button>
                 `,
             });
         }
