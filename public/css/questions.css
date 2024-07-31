@@ -10,7 +10,6 @@ body {
 }
 
 #center {
-  text-align: center;
   display: flex;
   flex-direction: column; /* Garante que os itens fiquem um abaixo do outro */
   align-items: center;
@@ -99,8 +98,8 @@ button:hover {
 /** Estilo do botão submit dos questionários de html **/
 input[type='submit'] {
   cursor: pointer; /* Mostra um cursor de ponteiro ao passar sobre o botão */
-  width: 36%;
-  height: 4vh;
+  width: 100px;
+  height: 30px;
   border-radius: 10px; /* Bordas arredondadas */
   border-style: double; /* Estilo da borda dupla */
   font-weight: 600; /* Peso da fonte */
@@ -108,6 +107,7 @@ input[type='submit'] {
   color: rgb(164, 164, 162); /* Cor do texto */
   border-color: rgb(0, 0, 0); /* Cor da borda */
   transition: 400ms; /* Transição suave para as mudanças */
+  margin-left: 37%;
 }
 
 /** Estilo do botão submit dos questionários de html ao passar o mouse **/
@@ -118,4 +118,17 @@ input[type='submit']:hover {
   color: rgb(219, 216, 216); /* Cor do texto ao passar o mouse */
   font-size: 1rem; /* Tamanho da fonte ao passar o mouse */
   text-shadow: 1px 10px 5px rgb(61, 61, 61); /* Sombra do texto ao passar o mouse */
+}
+
+
+#form_question-1{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.my_form-label{
+
+  margin-left: 40%;
 }
