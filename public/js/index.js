@@ -42,3 +42,26 @@ function start() {
         }
     });
 }
+
+function credits() {
+    Swal.fire({
+        title: "Créditos",
+        icon: "info",
+        confirmButtonText: "Fechar",
+        text: "Front-end, design e desenvolvimento: Hiago da Rocha",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
+    }
