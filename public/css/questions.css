@@ -49,8 +49,8 @@ textarea {
 /** Estilo do botão submit dos questionários de css **/
 button {
   cursor: pointer; /* Mostra um cursor de ponteiro ao passar sobre o botão */
-  width: 36%;
-  height: 4vh;
+  width: 100px;
+  height: 33px;
   border-radius: 10px; /* Bordas arredondadas */
   border-style: double; /* Estilo da borda dupla */
   font-weight: 600; /* Peso da fonte */
@@ -99,7 +99,9 @@ button:hover {
 input[type='submit'] {
   cursor: pointer; /* Mostra um cursor de ponteiro ao passar sobre o botão */
   width: 100px;
-  height: 30px;
+  height: 33px;
+  display: flex;
+  align-self: center;
   border-radius: 10px; /* Bordas arredondadas */
   border-style: double; /* Estilo da borda dupla */
   font-weight: 600; /* Peso da fonte */
@@ -107,7 +109,6 @@ input[type='submit'] {
   color: rgb(164, 164, 162); /* Cor do texto */
   border-color: rgb(0, 0, 0); /* Cor da borda */
   transition: 400ms; /* Transição suave para as mudanças */
-  margin-left: 37%;
 }
 
 /** Estilo do botão submit dos questionários de html ao passar o mouse **/
@@ -121,14 +122,9 @@ input[type='submit']:hover {
 }
 
 
-#form_question-1{
+#my_form{
+
 display: flex;
 flex-direction: column;
-align-items: center;
 }
 
-
-.my_form-label{
-
-  margin-left: 40%;
-}
