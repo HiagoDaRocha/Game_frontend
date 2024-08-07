@@ -43,6 +43,31 @@ function start() {
     });
 }
 
+function instructions() {
+
+  let str="Para as fases de html tem que responder corretamente e\n" +
+          "rapidamente a questão para tirar 3 estrelas.\n" + 
+          "\n" +
+          "Para as fases de css tem que responder corretamente a\n" +
+          "questão com as seguintes instruções:\n" +
+          "\n" +
+          "#challenge{código} para a questão 1;\n" +
+          "#challenge2{código} para a questão 2;\n" +
+          "#challenge3{código} para a questão 3;\n" +
+          "#challenge4{código} para a questão 4;\n" +
+          "#challenge5{código} para a questão 5.\n";
+
+  Swal.fire({
+      title: "Instruções para jogar",
+      icon: "info",
+      html: '<pre>' + str + '</pre>',
+      customClass: {
+        popup: 'format-pre'
+      },
+      confirmButtonText: "Fechar"
+  });
+}
+
 function credits() {
     Swal.fire({
         title: "Créditos",

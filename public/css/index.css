@@ -140,3 +140,10 @@ p {
   border-bottom: 3px solid #fff;
   border-right: 3px solid #fff;
 }
+
+.format-pre pre {
+  padding: 10px;
+  height: 250px;
+  text-align: left;
+ 
+}
