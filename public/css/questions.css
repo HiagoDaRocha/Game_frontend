@@ -5,6 +5,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#timer{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 body {
   background-color: #3d405b;
 }
