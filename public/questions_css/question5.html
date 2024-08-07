@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questão 5</title>
     <link rel="stylesheet" href="../css/questions.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -21,10 +22,39 @@
 
 
             <img src="../images/question5-challenge5css.png" id="challenge5"><br><br>
-            <textarea></textarea><br>
-            <button type="submit">Concluir</button>
+            <textarea id="textarea"></textarea><br>
+            <button type="button" id="submit-btn">Concluir</button>
         </div>
     </main>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const userTextarea = document.getElementById('textarea').value.trim();
+
+            // Respostas corretas
+            const correctTextareas = [
+                '#challenge5{filter:grayscale(100%);transform:rotate(180deg);}',
+            ];
+
+            // Remover espaços em branco extras e normalizar
+            const normalizedUserTextarea = userTextarea.replace(/\s+/g, '').toLowerCase();
+
+            // Verificar se a resposta do usuário é uma das respostas corretas
+            if (correctTextareas.includes(normalizedUserTextarea)) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Parabéns!',
+                    text: 'Sua resposta está correta!',
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Sua resposta está incorreta. Tente novamente!',
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

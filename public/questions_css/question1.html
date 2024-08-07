@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questão 1</title>
     <link rel="stylesheet" href="../css/questions.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -15,16 +16,45 @@
     <main>
         <div id="center">
             <h1>Questão 1</h1><br>
-            <p>Fazer o css de acordo com a imagem abaixo:</p><br>
+            <p>Fazer o CSS de acordo com a imagem abaixo:</p><br>
 
             <img src="../images/question1css.png"><br><br>
 
-
             <div id="challenge"></div><br><br>
-            <textarea></textarea><br>
-            <button type="submit">Concluir</button>
+            <textarea id="textarea"></textarea><br>
+            <button type="button" id="submit-btn">Concluir</button>
         </div>
     </main>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const userTextarea = document.getElementById('textarea').value.trim();
+
+            // Respostas corretas
+            const correctTextareas = [
+                '#challenge{border-radius:50%;background-color:blue;}',
+                '#challenge{background-color:blue;border-radius:50%;}'
+            ];
+
+            // Remover espaços em branco extras e normalizar
+            const normalizedUserTextarea = userTextarea.replace(/\s+/g, '').toLowerCase();
+
+            // Verificar se a resposta do usuário é uma das respostas corretas
+            if (correctTextareas.includes(normalizedUserTextarea)) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Parabéns!',
+                    text: 'Sua resposta está correta!',
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Sua resposta está incorreta. Tente novamente!',
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
